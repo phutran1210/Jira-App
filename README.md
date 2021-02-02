@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# Setup thu vien va cau truc thu muc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Thu Vien`
+
+```javascript
+    npm i redux
+    npm i react-redux
+    npm i styled-components
+    npm i axios (Thu vien ket noi API Back-End)
+    npm i react-router-dom (Thu vien cau truc router)
+    npm i andt (Thu vien tao components UI JSX)
+    npm i redux-saga (thu vien middleware redux),
+    npm i redux-thunk (thu vien middleware redux)
+    npm i tailwind (Thu vien css)
+    ----------------------------
+    npm i node-sass (thu vien compiler sass)
+    npm i sass-loader (thu vien compiler sass)
+    ----------------------------
+    npm i ..... (update sau)
+```
+
+`Cau truc thu muc`
+
+```javascript
+    assets;
+    components;
+    HOC;
+    pages;
+    redux 
+        actions 
+        constants 
+        reduces;
+    configStore.js;
+    services;
+    template;
+    util;
+```
 
 ## Available Scripts
 
