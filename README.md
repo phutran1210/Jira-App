@@ -22,18 +22,18 @@
 ## CẤU TRÚC THƯ MỤC DỰ ÁN
 
 ```javascript
-    assets;
-    components;
-    HOC;
-    pages;
+    assets
+    components
+    HOC
+    pages
     redux 
         actions 
         constants 
-        reduces;
-    configStore.js;
-    services;
-    template;
-    util;
+        reduces
+    configStore.js
+    services
+    template
+    util
 ```
 
 ## Available Scripts
