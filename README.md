@@ -1,16 +1,16 @@
-# Setup thu vien va cau truc thu muc
+# Setup thư mục và cấu trúc Folder
 
-`Thu Vien`
+## CÀI ĐẶT THƯ VIỆN
 
 ```javascript
     npm i redux
     npm i react-redux
     npm i styled-components
-    npm i axios (Thu vien ket noi API Back-End)
-    npm i react-router-dom (Thu vien cau truc router)
-    npm i andt (Thu vien tao components UI JSX)
-    npm i redux-saga (thu vien middleware redux),
-    npm i redux-thunk (thu vien middleware redux)
+    npm i axios (Thư viện kết nối API Back-End)
+    npm i react-router-dom (Thư viện cấu trúc router)
+    npm i andt (Thư viện tạo components UI JSX)
+    npm i redux-saga (Thư viện middleware redux)  || Chọn 1 or 2
+    npm i redux-thunk (Thư viện middleware redux) || Chọn 1 or 2
     npm i tailwind (Thu vien css)
     ----------------------------
     npm i node-sass (thu vien compiler sass)
@@ -19,7 +19,7 @@
     npm i ..... (update sau)
 ```
 
-`Cau truc thu muc`
+## CẤU TRÚC THƯ MỤC DỰ ÁN
 
 ```javascript
     assets;
