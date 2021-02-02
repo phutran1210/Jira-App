@@ -1,15 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import './Header.css'
 
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-      <NavLink 
-      activeStyle={{fontWeight: "bold"}}
-      className="navbar-brand" to="/">
+      <a className="navbar-brand" href="home">
         CyberLearn
-      </NavLink>
+      </a>
       <button
         className="navbar-toggler d-lg-none"
         type="button"
@@ -22,24 +18,15 @@ export default function Header() {
       <div className="collapse navbar-collapse" id="collapsibleNavId">
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item active">
-            <NavLink
-            activeStyle={{fontWeight: "bold"}} 
-            activeClassName="activeNavItem"
-            className="nav-link" to="/home">Home</NavLink>
+            <a className="nav-link" href="/home">Home</a>
           </li>
           <li className="nav-item">
-            <NavLink
-            activeStyle={{fontWeight: "bold"}}
-            activeClassName="activeNavItem"
-            className="nav-link" to="/about">
+            <a className="nav-link" href="/about">
               About
-            </NavLink>
+            </a>
           </li>
           <li className="nav-item">
-          <NavLink 
-          activeClassName="activeNavItem"
-          activeStyle={{fontWeight: "bold"}}
-          className="nav-link" to="/contact">Contact</NavLink>
+          <a className="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
