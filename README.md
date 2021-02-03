@@ -2,9 +2,9 @@
   - [CÀI ĐẶT THƯ VIỆN](#cài-đặt-thư-viện)
   - [CẤU TRÚC THƯ MỤC DỰ ÁN](#cấu-trúc-thư-mục-dự-án)
 - [2. Routing (react-route-dom)](#2-routing-react-route-dom)
-    - [2.1 `Navlink hoac <Link>`](#21-navlink-hoac-link)
+    - [2.1 `Navlink hoặc <Link>`](#21-navlink-hoac-link)
       - [`Demo`](#demo)
-    - [2.2 Mot so thuoc tinh chuyen doi `component`](#22-mot-so-thuoc-tinh-chuyen-doi-component)
+    - [2.2 Một số thuộc tính chuyển đổi `component`](#22-mot-so-thuoc-tinh-chuyen-doi-component)
       - [`history`](#history)
 
 # 1. Setup thư mục và cấu trúc Folder
@@ -46,7 +46,7 @@
 ```
 
 # 2. Routing (react-route-dom)
-### 2.1 `Navlink hoac <Link>`
+### 2.1 `Navlink hoặc <Link>`
 
 > - Thu vien `react-router-dom` ho tro ta the `<NavLink>` thay the cho the `<a>` voi href doi thanh to,
 > giup cho ta co the chuyen doi qua lai giua cac trang ma khong can load lai toan bo `html` cua trang do.
@@ -64,7 +64,7 @@
     </NavLink>
 ```
 
-### 2.2 Mot so thuoc tinh chuyen doi `component`
+### 2.2 Một số thuộc tính chuyển đổi `component`
 
 > - Cac `component` duoc load tren `<Route>` se co them 3 thuoc tinh `props`:
 >    -   `history`
