@@ -1,4 +1,13 @@
-# Setup thư mục và cấu trúc Folder
+- [1. Setup thư mục và cấu trúc Folder](#1-setup-thư-mục-và-cấu-trúc-folder)
+  - [CÀI ĐẶT THƯ VIỆN](#cài-đặt-thư-viện)
+  - [CẤU TRÚC THƯ MỤC DỰ ÁN](#cấu-trúc-thư-mục-dự-án)
+- [2. Routing (react-route-dom)](#2-routing-react-route-dom)
+    - [2.1 `Navlink hoac <Link>`](#21-navlink-hoac-link)
+      - [`Demo`](#demo)
+    - [2.2 Mot so thuoc tinh chuyen doi `component`](#22-mot-so-thuoc-tinh-chuyen-doi-component)
+      - [`history`](#history)
+
+# 1. Setup thư mục và cấu trúc Folder
 
 ## CÀI ĐẶT THƯ VIỆN
 
@@ -36,69 +45,40 @@
     util
 ```
 
-## Available Scripts
+# 2. Routing (react-route-dom)
+### 2.1 `Navlink hoac <Link>`
 
-In the project directory, you can run:
+> - Thu vien `react-router-dom` ho tro ta the `<NavLink>` thay the cho the `<a>` voi href doi thanh to,
+> giup cho ta co the chuyen doi qua lai giua cac trang ma khong can load lai toan bo `html` cua trang do.
+> - Ngoai ra `<NavLink>` con cho phep ta custom link css, khi nguoi dung go dung duong dan thi the
+> `<NavLink>` se  duoc active `class` hoac `style` thong qua thuoc tinh `activeClass`,`activeStyle`
 
-### `npm start`
+#### `Demo`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```react
+    <NavLink>
+        exact
+        activeStyle = {{color:red}}
+        activeClass = "My-style"
+        Hello CyberLearn
+    </NavLink>
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 2.2 Mot so thuoc tinh chuyen doi `component`
 
-### `npm test`
+> - Cac `component` duoc load tren `<Route>` se co them 3 thuoc tinh `props`:
+>    -   `history`
+>    -   `match`
+>    -   `location`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `history`
 
-### `npm run build`
+```react
+props.history.goBack()              --> Thanh cong dua ve trang truoc do 
+    - VD: Home -- Login => thanh cong dua ve trang Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+props.history.push('/<patch name>') --> Chuyen huong den patch tuong ung
+    - VD: props.history.push('/home') => Day den trang home
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+props.history.replace('')           --> Thay doi noi dung
+```

@@ -31,15 +31,21 @@ export default function Header() {
             <NavLink
             activeStyle={{fontWeight: "bold"}}
             activeClassName="activeNavItem"
-            className="nav-link" to="/about">
-              About
+            className="nav-link" to="/contact">
+              Contact
             </NavLink>
           </li>
           <li className="nav-item">
           <NavLink 
           activeClassName="activeNavItem"
           activeStyle={{fontWeight: "bold"}}
-          className="nav-link" to="/contact">Contact</NavLink>
+          className="nav-link" to="/about">About</NavLink>
+          </li>
+          <li className="nav-item">
+          <NavLink 
+          activeClassName="activeNavItem"
+          activeStyle={{fontWeight: "bold"}}
+          className="nav-link" to="/login">Login</NavLink>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
